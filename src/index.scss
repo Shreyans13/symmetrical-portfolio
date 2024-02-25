@@ -1,0 +1,15 @@
+@use "node_modules/@picocss/pico/scss/pico";
+
+
+
+[data-theme=dark] {
+    --pico-background-color: #000;
+}
+
+[data-theme=light] {
+   --pico-background-color: #fff;
+}
+
+
+
+

@@ -1,15 +1,20 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.tsx'
-import './index.sass'
+import './index.scss'
+import { getTheme, setTheme } from './utils/util.ts';
 
-// import { useBoundStore } from "./store/state.ts";
-// const [theme, setTheme] = useState('dark');
+const theme = getTheme();
 
+if (theme == "") {
+  setTheme("dark");
+}
+
+// set elemental css to the first html tag to set the theme
+document.getElementsByTagName("html")[0].setAttribute("data-theme", theme);
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    {/* <p> theme == {util.theme}</p> */}
     <App />
   </React.StrictMode>,
 )

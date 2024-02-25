@@ -1,0 +1,56 @@
+ /* @font-face { */
+  /* font-family: ShadowHand; */
+  /* src: url("./assets/fonts/ShadowHand/ShadowHand.ttf") format('ttf'), */
+     /* url("./assets/fonts/ShadowHand/ShadowHand.otf") format('otf'); */
+  /* font-display: swap; */
+ /* } */
+
+@font-face {
+	  font-family: 'ShadowHand';
+	  src: url('https://cdn.jsdelivr.net/gh/200-DevelopersFound/SnapStore/portfolio/fonts/ShadowHand/ShadowHand.ttf') format('truetype');
+	  font-weight: normal;
+	  font-style: normal;
+	}
+
+.font-sh {
+  font-family: 'ShadowHand';
+  font-size: 120px;
+}
+
+
+ .content {
+	padding: 0 1rem;
+	display: flex;
+	flex-direction: column;
+	width: 100vw;
+	min-height: 100vh;
+	position: relative;
+	justify-content: center;
+	align-items: start;
+	font-family: "ShadowHand", sans-serif;
+	font-weight: 300;
+}
+
+.content h2 {
+	font-size: 16vw;
+	line-height: 1;
+	margin: 0;
+	pointer-events: none;
+	background-color: #e8c942;
+	background-image: linear-gradient(45deg, #e8c942, #9462d1);
+	background-size: 100%;
+	background-repeat: repeat;
+   background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent; 
+	-moz-background-clip: text;
+	-moz-text-fill-color: transparent;
+}
+
+.content h2 i {
+	font-family: "ShadowHand", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	letter-spacing: -1.75vw;
+	font-size: 14.25vw;
+}

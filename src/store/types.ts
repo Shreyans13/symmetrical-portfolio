@@ -1,16 +1,11 @@
 import { StateCreator } from 'zustand';
 
-export enum Theme {
-  Light = "light",
-  Dark = "dark"
-}
-
 export interface UtilDefintion {
-  theme: Theme;
+  someValue: string;
 }
 
 export interface UtilActions {
-  setTheme: (value: Theme) => void;
+  setSomeValue: (value: string) => void;
 }
 
 export type UtilType = UtilActions & UtilDefintion;
