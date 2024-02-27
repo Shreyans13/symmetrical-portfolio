@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@picocss/pico": "2.0.3",
+    "gsap": "^3.12.5",
     "immer": "^10.0.3",
     "persist": "^0.2.7",
     "react": "^18.2.0",

@@ -1,9 +1,3 @@
- /* @font-face { */
-  /* font-family: ShadowHand; */
-  /* src: url("./assets/fonts/ShadowHand/ShadowHand.ttf") format('ttf'), */
-     /* url("./assets/fonts/ShadowHand/ShadowHand.otf") format('otf'); */
-  /* font-display: swap; */
- /* } */
 
 @font-face {
 	  font-family: 'ShadowHand';
@@ -18,8 +12,27 @@
 }
 
 
+:root {
+	--color-text: #000;
+	--color-bg: #f2f1eb;
+	--color-link: #000;
+	--color-link-hover: #000;
+	--page-padding: 1rem;
+	--columns: 15;
+	--cursor-blend-mode: difference;
+	--cursor-radius: 0;
+	--color-text: #cdbcbc;
+	--color-bg: #000;
+	--color-link: #fff;
+	--color-link-hover: #fff;
+	--cursor-bg: #5cafc1;
+	--cursor-blend-mode: exclusion;
+	--gradient-text-1: #e8c942;
+	--gradient-text-2: rgb(148 98 209);
+}
+
  .content {
-	padding: 0 1rem;
+	padding: 0 2rem;
 	display: flex;
 	flex-direction: column;
 	width: 100vw;
@@ -53,4 +66,38 @@
 	font-style: normal;
 	letter-spacing: -1.75vw;
 	font-size: 14.25vw;
+}
+
+
+.cursor {
+	height: 100%;
+	position: fixed;
+	width: 100%;
+	left: 0;
+	top: 0;
+	pointer-events: none;
+	z-index: 99;
+	mix-blend-mode: var(--cursor-blend-mode);
+	--size: calc(100vw / var(--columns));
+}
+
+.cursor_inner {
+	display: grid;
+	grid-template-columns: repeat(var(--columns), var(--size));
+}
+
+.cursor_inner_box {
+	width: var(--size);
+	height: var(--size);
+	background: var(--cursor-bg);
+	opacity: 0;
+	border-radius: var(--cursor-radius);
+}
+
+
+@media screen and (min-width: 53em) {
+	:root {
+		--columns: 30;
+		--page-padding: 2rem;
+	}
 }
