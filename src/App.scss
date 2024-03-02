@@ -1,47 +1,15 @@
-
-@font-face {
-	  font-family: 'ShadowHand';
-	  src: url('https://cdn.jsdelivr.net/gh/200-DevelopersFound/SnapStore/portfolio/fonts/ShadowHand/ShadowHand.ttf') format('truetype');
-	  font-weight: normal;
-	  font-style: normal;
-	}
-
-.font-sh {
-  font-family: 'ShadowHand';
-  font-size: 120px;
-}
-
-
-:root {
-	--color-text: #000;
-	--color-bg: #f2f1eb;
-	--color-link: #000;
-	--color-link-hover: #000;
-	--page-padding: 1rem;
-	--columns: 15;
-	--cursor-blend-mode: difference;
-	--cursor-radius: 0;
-	--color-text: #cdbcbc;
-	--color-bg: #000;
-	--color-link: #fff;
-	--color-link-hover: #fff;
-	--cursor-bg: #5cafc1;
-	--cursor-blend-mode: exclusion;
-	--gradient-text-1: #e8c942;
-	--gradient-text-2: rgb(148 98 209);
-}
-
  .content {
 	padding: 0 2rem;
-	display: flex;
+	display: grid;
 	flex-direction: column;
 	width: 100vw;
 	min-height: 100vh;
 	position: relative;
 	justify-content: center;
 	align-items: start;
-	font-family: "ShadowHand", sans-serif;
+	font-family: "FranchiseFree", sans-serif;
 	font-weight: 300;
+   grid-template-columns: 2fr 1fr;
 }
 
 .content h2 {
@@ -49,26 +17,40 @@
 	line-height: 1;
 	margin: 0;
 	pointer-events: none;
-	background-color: #e8c942;
-	background-image: linear-gradient(45deg, #e8c942, #9462d1);
-	background-size: 100%;
-	background-repeat: repeat;
+	background-color: #fff7e9;
+	// background-image: linear-gradient(45deg, #e8c942, #9462d1);
+	// background-size: 100%;
+	// background-repeat: repeat;
    background-clip: text;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent; 
 	-moz-background-clip: text;
 	-moz-text-fill-color: transparent;
-}
+  	font-family: "FranchiseFree", sans-serif;
+	font-weight: 400;
+  font-size: 14.25vw;
 
+}
+.content .left {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+ }
 .content h2 i {
-	font-family: "ShadowHand", sans-serif;
+	font-family: "FranchiseFree", sans-serif;
 	font-weight: 400;
 	font-style: normal;
-	letter-spacing: -1.75vw;
+	// letter-spacing: -1.75vw;
 	font-size: 14.25vw;
 }
 
+.content-left-image {
+height: 350px;
+}
 
+
+.right img {
+   height: 500px;
+ }
 .cursor {
 	height: 100%;
 	position: fixed;
@@ -100,4 +82,14 @@
 		--columns: 30;
 		--page-padding: 2rem;
 	}
+}
+
+
+
+
+.header ul {
+  width: 100%;
+  text-align: center;
+  align-items: center;
+  // display: inline-block;
 }

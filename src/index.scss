@@ -1,6 +1,53 @@
 @use "node_modules/@picocss/pico/scss/pico";
 
 
+@font-face {
+	  font-family: 'FranchiseFree';
+	  src: url('https://cdn.jsdelivr.net/gh/200-DevelopersFound/SnapStore@main/portfolio/fonts/Franchise/Franchise-Free-Bold.otf') format('truetype');
+	  font-weight: normal;
+	  font-style: normal;
+	}
+
+/* @import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&display=swap') / */
+
+@font-face {
+  font-family: 'JosefinSlab';
+  src: url('https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&display=swap') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+.font-ff {
+  font-family: 'FranchiseFree';
+  /* font-size: 120px; */
+}
+
+.font-js {
+  font-family: JosefinSlab;
+}
+
+:root {
+	--color-text: #000;
+	--color-bg: #f2f1eb;
+	--color-link: #000;
+	--color-link-hover: #000;
+	--page-padding: 1rem;
+	--columns: 15;
+	--cursor-blend-mode: difference;
+	--cursor-radius: 0;
+	--color-text: #cdbcbc;
+	--color-bg: #000;
+	--color-link: #fff;
+	--color-link-hover: #fff;
+	--cursor-bg: #5cafc1;
+  /* mix-blend-mode: difference; */
+	/* --cursor-blend-mode: exclusion; */
+	--gradient-text-1: #e8c942;
+	--gradient-text-2: rgb(148 98 209);
+}
+
+
 
 [data-theme=dark] {
     --pico-background-color: #000;
@@ -10,6 +57,17 @@
    --pico-background-color: #fff;
 }
 
+p, span, h1, h2, h3, h4, h5, h6 {
+  background-color: #fff7e9;
+	// background-image: linear-gradient(45deg, #e8c942, #9462d1);
+	// background-size: 100%;
+	// background-repeat: repeat;
+   background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent; 
+	-moz-background-clip: text;
+	-moz-text-fill-color: transparent;
 
+}
 
 
