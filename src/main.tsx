@@ -10,6 +10,8 @@ if (theme == "") {
   setTheme("dark");
 }
 
+// setTheme("light")
+setTheme("dark")
 // set elemental css to the first html tag to set the theme
 document.getElementsByTagName("html")[0].setAttribute("data-theme", theme);
 

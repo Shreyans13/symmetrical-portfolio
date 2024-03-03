@@ -1,7 +1,7 @@
 import { Cursor } from "./cursor";
 import { gsap } from "gsap";
 
-const setTheme = (value: string): void => localStorage.setItem('theme', value);
+const setTheme = (value: "light" | "dark"): void => localStorage.setItem('theme', value);
 
 const getTheme = (): string => localStorage.getItem('theme') ?? "";
 
