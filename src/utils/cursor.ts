@@ -51,10 +51,24 @@ export class Cursor {
       const customColorArray = customColorAttributes ? customColorAttributes.split(',') : [];
       const customColorLength = customColorAttributes ? customColorArray.length : 0;
       let innerHTMLSTR = '';
+      const colors = [
+        "bg-sky-500",
+        "bg-pink-500",
+        "bg-green-500",
+        "bg-yellow-500",
+        "bg-red-500",
+        "bg-purple-500",
+        "bg-blue-500",
+        "bg-indigo-500",
+        "bg-violet-500",
+      ];
+      const getRandomColor = () => {
+        return colors[Math.floor(Math.random() * colors.length)];
+      };
       for (let i = 0; i <= this.cellsTotal; i++)
         innerHTMLSTR = innerHTMLSTR + (customColorLength === 0 ?
-          '<div class="cursor_inner_box"> </div>' :
-          `<div class="cursor_inner_box" style="transform: scale(${gsap.utils.random(0.5, 2)}); background=${customColorArray[Math.round(gsap.utils.random(0, customColorLength - 1))]}"></div>`)
+          `<div class="cursor_inner_box ${getRandomColor()}"> </div>` :
+          `<div class="cursor_inner_box ${getRandomColor()}" style="transform: scale(${gsap.utils.random(0.5, 2)});"></div>`)
 
       this.DOM.inner!.innerHTML = innerHTMLSTR;
       this.DOM.cells = this.DOM.inner!.children;

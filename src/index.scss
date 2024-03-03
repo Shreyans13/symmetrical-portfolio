@@ -1,12 +1,6 @@
-/* @use "node_modules/@picocss/pico/scss/pico"; */
-
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-
-
 
 @layer base {
   :root{
@@ -14,7 +8,7 @@
     --columns: 15;
     --cursor-radius: 0;
     --cursor-bg: #5cafc1;
-    --cursor-blend-mode: exclusion;
+    --cursor-blend-mode: screen;
   }
   :root[data-theme~="light"] {
     --color-background: #fff;
@@ -29,12 +23,6 @@
   }
 }
 
-
-
-
-
-
-
 @font-face {
   font-family: 'FranchiseFree'; 
   src: url('https://cdn.jsdelivr.net/gh/200-DevelopersFound/SnapStore@main/portfolio/fonts/Franchise/Franchise-Free-Bold.otf') format('truetype'); 
@@ -42,24 +30,12 @@
   font-style: normal; 
 } 
 
-
 @font-face {
   font-family: 'JosefinSlab';
   src: url('https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&display=swap') format('truetype'); 
   font-weight: normal; 
   font-style: normal; 
 } 
-
-
-.cfont-ff {
-  font-family: 'FranchiseFree';
-}
-
-.cfont-js {
-  font-family: JosefinSlab;
-}
-
-
 
 p, span, h1, h2, h3, h4, h5, h6, a {
   background-color: var(--text-background);
@@ -73,27 +49,5 @@ p, span, h1, h2, h3, h4, h5, h6, a {
   -moz-text-fill-color: transparent;
 
 }
-
-
-/* [data-theme=dark] { */
-/*     --pico-background-color: #000; */
-/* } */
-
-/* [data-theme=light] { */
-/*    --pico-background-color: #fff; */
-/* } */
-
-/* p, span, h1, h2, h3, h4, h5, h6 { */
-/*   background-color: #fff7e9; */
-/* 	// background-image: linear-gradient(45deg, #e8c942, #9462d1); */
-/* 	// background-size: 100%; */
-/* 	// background-repeat: repeat; */
-/*    background-clip: text; */
-/* 	-webkit-background-clip: text; */
-/* 	-webkit-text-fill-color: transparent;  */
-/* 	-moz-background-clip: text; */
-/* 	-moz-text-fill-color: transparent; */
-
-/* } */
 
 

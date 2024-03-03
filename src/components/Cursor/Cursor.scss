@@ -19,7 +19,7 @@
     .cursor_inner_box {
     width: var(--size);
     height: var(--size);
-    background: var(--cursor-bg);
+    /* background: var(--cursor-bg); */
     opacity: 0;
     border-radius: var(--cursor-radius);
   }
