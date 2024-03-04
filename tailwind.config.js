@@ -10,7 +10,7 @@ export default {
     extend: {
       fontFamily: {
         FranchiseFree: ["FranchiseFree"],
-        JosefinSlab: ["JosefinSlab"]
+        JosefinSlab: ["Josefin Slab", "serif"]
       },
       colors: {
         backgroundColor: "var(--color-background)",
@@ -24,7 +24,20 @@ export default {
         '12xl': '14rem',
         '13xl': '16rem',
       },
-
+      animation: {
+        marquee: 'marquee 5s linear infinite',
+        marquee2: 'marquee2 5s linear infinite',
+      },
+      keyframes: {
+        marquee: {
+          '0%': { transform: 'translateX(0%)' },
+          '100%': { transform: 'translateX(-100%)' },
+        },
+        marquee2: {
+          '0%': { transform: 'translateX(100%)' },
+          '100%': { transform: 'translateX(0%)' },
+        },
+      },
     },
   },
   plugins: [],

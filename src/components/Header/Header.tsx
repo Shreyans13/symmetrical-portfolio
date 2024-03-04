@@ -17,17 +17,17 @@ function Header() {
           </div>
           <div className="flex items-center">
             <nav className="items-center hidden text-xl uppercase font-sen  lg:flex">
-              <a href="#" className="flex px-6 py-4 uppercase font-JosefinSlab">
+              <a href="#" className="flex px-6 py-4 uppercase font-JosefinSlab font-black">
                 Home
               </a>
-              <a href="#" className="flex px-6 py-4 font-JosefinSlab uppercase">
+              <a href="#" className="flex px-6 py-4 font-JosefinSlab uppercase font-black">
                 Skills
               </a>
               <p className='font-FranchiseFree uppercase text-6xl px-8'> shreyans jain </p>
-              <a href="#" className="flex px-6 py-4 font-JosefinSlab uppercase">
+              <a href="#" className="flex px-6 py-4 font-JosefinSlab uppercase font-black">
                 Project
               </a>
-              <a href="#" className="flex px-6 py-4 font-JosefinSlab uppercase">
+              <a href="#" className="flex px-6 py-4 font-JosefinSlab uppercase font-black">
                 Resume
               </a>
             </nav>
