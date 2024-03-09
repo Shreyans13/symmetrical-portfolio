@@ -48,4 +48,16 @@ const initiateCursorAnimation = () => {
     });
   }
 };
-export { setTheme, getTheme, initiateCursorAnimation };
+// TODO: Refator to suppoer multiple elements
+const add3DTextAnimation = () => {
+  const domElement = document.getElementById("anim-3dText");
+  domElement?.addEventListener("mousemove", (e) => {
+    const rXP = e.pageX - domElement.offsetLeft - domElement.offsetWidth / 2;
+    const rYP = e.pageY - domElement.offsetTop - domElement.offsetHeight / 2;
+
+    domElement.style.textShadow = `${rYP / 10}px ${rXP / 80}px rgba(255,255,255,.8), 
+                   ${rYP / 8}px ${rXP / 60}px rgba(255,237,0,1), 
+                   ${rXP / 70}px ${rYP / 12}px rgba(0,159,227,.7)`;
+  });
+};
+export { setTheme, getTheme, initiateCursorAnimation, add3DTextAnimation };
