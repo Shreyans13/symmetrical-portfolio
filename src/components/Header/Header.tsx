@@ -1,6 +1,16 @@
+import { useEffect } from "react";
 import "./Header.scss";
+import { add3DTextAnimation } from "../../utils/util.ts";
 
 function Header() {
+
+  useEffect(() => {
+    add3DTextAnimation()
+  }, [])
+
+
+
+
   return (
     <>
       <header className="z-30 flex h-24 w-full items-center sm:h-32">
@@ -33,7 +43,7 @@ function Header() {
               >
                 Skills
               </a>
-              <p className="px-8 font-FranchiseFree text-6xl uppercase">
+              <p id="anim-3dText" className="px-8 font-FranchiseFree text-6xl uppercase ">
                 {" "}
                 shreyans jain{" "}
               </p>
