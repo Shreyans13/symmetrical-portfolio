@@ -1,4 +1,4 @@
-import { StateCreator } from 'zustand';
+import { StateCreator } from "zustand";
 
 export interface UtilDefintion {
   someValue: string;
@@ -16,7 +16,7 @@ export interface CombinedState {
 
 export type StateSlice<T> = StateCreator<
   CombinedState,
-  [['zustand/immer', never]],
-  [['zustand/persist', Partial<T>]],
+  [["zustand/immer", never]],
+  [["zustand/persist", Partial<T>]],
   T
 >;

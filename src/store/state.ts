@@ -1,25 +1,25 @@
 // import { useUtilStore } from "./util/util.ts";
 import { create } from "zustand";
-import { CombinedState } from "./types";
 import { persist } from "zustand/middleware";
 import { immer } from "zustand/middleware/immer";
-import { createFooState } from "./util/util";
+import { CombinedState } from "./types.ts";
+import createFooState from "./util/util.ts";
 
-
-export const useStore = create<CombinedState>()(
+const useStore = create<CombinedState>()(
   persist(
     immer((...api) => ({
-      util: (createFooState(...api))
+      util: createFooState(...api),
     })),
     {
       name: "AppStore",
       // partialize: (state) => ({})
-      merge: (_persistedState, currentState) => {
+      merge: (_persistedState, currentState) =>
         // const _typePersistedState = persistedState as CombinedState | undefined;
-        return {
-          util: currentState.util
-        }
-      }
-    }
-  )
-)
+        ({
+          util: currentState.util,
+        }),
+    },
+  ),
+);
+
+export default useStore;

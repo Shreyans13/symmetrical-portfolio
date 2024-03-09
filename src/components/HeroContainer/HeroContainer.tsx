@@ -34,15 +34,14 @@ function HeroContainer() {
             Shreyans
           </span>
         </div>
-         
+
         <div className="col-span-1 row-span-2 ">
           <img
             className="xl:inline-block hidden h-full"
             src="https://images.unsplash.com/photo-1518112166137-85f9979a43aa?q=80&w=3087&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
           />
         </div>
-        
-        
+
         <div className="col-span-3">
           <img
             className=" border-8 rounded border-white xl:inline-block hidden  lg:h-64 md:h-60 sm:h-56 h-52 lg:w-64 md:w-60 sm:w-56 w-52 m-4 align-top"
@@ -56,14 +55,7 @@ function HeroContainer() {
             Jain
           </span>
         </div>
-        
       </div>
-
-   
-
-
-
-      
     </div>
   );
 }

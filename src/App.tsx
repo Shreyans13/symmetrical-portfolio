@@ -1,14 +1,9 @@
-import { useEffect } from 'react';
-import './App.scss'
-import { initiateCursorAnimation } from './utils/util';
-import Header from './components/Header/Header';
-import Cursor from './components/Cursor/Cursor';
-import HeroContainer from './components/HeroContainer/HeroContainer';
-
-
-
-
-
+import { useEffect } from "react";
+import "./App.scss";
+import { initiateCursorAnimation } from "./utils/util.ts";
+import Header from "./components/Header/Header.tsx";
+import Cursor from "./components/Cursor/Cursor.tsx";
+import HeroContainer from "./components/HeroContainer/HeroContainer.tsx";
 
 function App() {
   useEffect(() => {
@@ -16,12 +11,12 @@ function App() {
   }, []);
 
   return (
-    <div className='md:container md:mx-auto'>
+    <div className="md:container md:mx-auto">
       <Header />
       <HeroContainer />
       <Cursor />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
