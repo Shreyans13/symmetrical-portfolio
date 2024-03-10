@@ -4,7 +4,7 @@ import "./TextRoller.scss";
 export default function TextRoller() {
   return (
     <>
-      <div className="my-2 text-center text-3xl md:text-4xl">
+      <div className="my-2 text-right text-3xl md:text-4xl">
         <span className="bg-red-500">console</span>
         <span className="bg-text-white">.</span>
         <span className="bg-sky-500">log</span>
@@ -36,6 +36,7 @@ export default function TextRoller() {
         </span>
         <span className="bg-text-white">")</span>
       </div>
+      <br />
     </>
   );
 }

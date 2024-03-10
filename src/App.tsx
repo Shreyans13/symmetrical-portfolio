@@ -15,8 +15,10 @@ function App() {
   return (
     <div className="md:container md:mx-auto">
       <Header />
-      <HeroContainer />
       <TextRoller />
+      
+      <HeroContainer />
+      
       <Cursor />
     </div>
   );
