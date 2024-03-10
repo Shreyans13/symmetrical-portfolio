@@ -60,4 +60,5 @@ const add3DTextAnimation = () => {
                    ${rXP / 70}px ${rYP / 12}px rgba(0,159,227,.7)`;
   });
 };
+
 export { setTheme, getTheme, initiateCursorAnimation, add3DTextAnimation };

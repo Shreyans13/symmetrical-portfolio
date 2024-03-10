@@ -1,16 +1,12 @@
 // import React from 'react'
 // import PropTypes from 'prop-types'
 
-import Badge from "../Badge/Badge.tsx";
+// import Badge from "../Badge/Badge.tsx";
 import "./HeroContainer.scss";
 
 function HeroContainer() {
   return (
     <div className="">
-      <Badge />
-      <br />
-      <br />
-      <br />
       <div className="grid grid-cols-4 gap-0">
         <div className="col-span-3 inline-block">
           <img
