@@ -1,5 +1,8 @@
 import { gsap } from "gsap";
+import Lenis from "@studio-freight/lenis";
+import { ScrollTrigger } from "gsap/all";
 import Cursor from "./cursor.ts";
+import Item from "./onscrollFilter.ts";
 
 const setTheme = (value: "light" | "dark"): void =>
   localStorage.setItem("theme", value);
@@ -48,6 +51,42 @@ const initiateCursorAnimation = () => {
     });
   }
 };
+
+let lenis: Lenis;
+const initiateOnScrollFilterAnimation = () => {
+  // const scrollElement: HTMLElement =
+  console.log(lenis);
+  console.log("initiateOnScrollFilterAnimation called ");
+  // TODO: To be fixed with proper lifecycle methods
+  if (lenis !== undefined) return;
+
+  lenis = new Lenis({
+    lerp: 0.1,
+    smoothWheel: true,
+  });
+
+  lenis.on("scroll", () => ScrollTrigger.update());
+
+  const scrollFN = (time: number) => {
+    lenis.raf(time);
+    requestAnimationFrame(scrollFN);
+  };
+
+  requestAnimationFrame(scrollFN);
+  // const list: [HTMLElement] = [...document.querySelectorAll(".content-wrap")];
+
+  const list: HTMLElement[] = Array.from(
+    document.querySelectorAll(".content-wrap"),
+  );
+  console.log("list");
+  console.log(list);
+
+  list.forEach((element) => {
+    const a = new Item(element);
+    console.log(a);
+  });
+};
+
 // TODO: Refator to suppoer multiple elements
 const add3DTextAnimation = () => {
   const domElement = document.getElementById("anim-3dText");
@@ -61,4 +100,20 @@ const add3DTextAnimation = () => {
   });
 };
 
-export { setTheme, getTheme, initiateCursorAnimation, add3DTextAnimation };
+// const preLoadFonts = (id: string) : Promise<T> => {
+//   return new Promise((resolve) => {
+//     WebFont.load({
+//       typekit: {
+//         id: id
+//       },
+//       active: resolve
+//     })
+//   })
+// }
+export {
+  setTheme,
+  getTheme,
+  initiateCursorAnimation,
+  initiateOnScrollFilterAnimation,
+  add3DTextAnimation,
+};

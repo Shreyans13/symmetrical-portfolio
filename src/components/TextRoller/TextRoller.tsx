@@ -4,7 +4,7 @@ import "./TextRoller.scss";
 export default function TextRoller() {
   return (
     <>
-      <div className="my-2 text-right text-3xl md:text-4xl">
+      <div className="my-2 text-right text-3xl md:container md:mx-auto md:text-4xl">
         <span className="bg-red-500">console</span>
         <span className="bg-text-white">.</span>
         <span className="bg-sky-500">log</span>
@@ -21,8 +21,8 @@ export default function TextRoller() {
             <li>
               <span className="bg-orange-500	">Frontend Developer</span>
             </li>
-            
-            
+
+
             <li>
               <span className="	bg-indigo-500	">Backend Developer</span>
             </li>
@@ -36,7 +36,6 @@ export default function TextRoller() {
         </span>
         <span className="bg-text-white">")</span>
       </div>
-      <br />
     </>
   );
 }

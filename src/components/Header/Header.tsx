@@ -12,7 +12,7 @@ function Header() {
 
 
   return (
-    <>
+    <div className="md:container md:mx-auto">
       <header className="z-30 flex h-24 w-full items-center sm:h-32">
         <div className="container mx-auto flex items-center justify-between px-6 lg:justify-center">
           <div className="flex items-center text-3xl font-black uppercase">
@@ -68,7 +68,7 @@ function Header() {
           </div>
         </div>
       </header>
-    </>
+    </div>
   );
 }
 

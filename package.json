@@ -13,6 +13,7 @@
     "prepare": "husky install"
   },
   "dependencies": {
+    "@studio-freight/lenis": "^1.0.39",
     "@vitejs/plugin-react": "^4.2.1",
     "gsap": "^3.12.5",
     "immer": "^10.0.3",
