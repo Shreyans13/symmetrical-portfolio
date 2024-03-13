@@ -78,6 +78,16 @@ export default {
           "100%": { transform: "translateX(0%)" },
         },
       },
+      zIndex: {
+        100: "100",
+      },
+      gridTemplateColumns: {
+        // Simple 16 column grid
+        "gtc-1-fr": "grid-template-columns: 1fr 1fr;",
+      },
+      maxWidth: {
+        half: "50%",
+      },
     },
   },
   plugins: [],
