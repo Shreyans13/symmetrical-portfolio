@@ -13,7 +13,7 @@ function HeroContainer() {
             className="m-4 hidden h-52 rotate-[16deg] align-top sm:h-56 md:h-60 lg:h-64 xl:inline-block "
             src="https://images.unsplash.com/photo-1518112166137-85f9979a43aa?q=80&w=3087&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
           />
-          <span className=" animatedTextFill font-FranchiseFree text-7xl uppercase sm:text-9xl md:text-11xl lg:text-13xl">
+          <span className=" font-FranchiseFree text-7xl uppercase sm:text-9xl md:text-11xl lg:text-13xl">
             Shreyans
           </span>
         </div>

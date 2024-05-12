@@ -19,8 +19,8 @@ export default function OnScrollFilter() {
       <div className="content-wrap grid place-items-center	[grid-template-areas:'main']">
         <div className="content place-items-center">
           <div className="title-wrap flex items-center justify-center gap-4	 ">
-            <span className="title title--up  relative z-100 pt-2 font-JosefinSlab text-6xl">About</span>
-            <span className="title title--down  relative z-100 pt-2 font-JosefinSlab text-6xl">Me</span>
+            <span className="title title--up  relative z-100 pt-2 font-JosefinSlab text-4xl md:text-6xl">About</span>
+            <span className="title title--down  relative z-100 pt-2 font-JosefinSlab text-4xl md:text-6xl">Me</span>
           </div>
         </div>
         <div className="content grid-cols-gtc-1-fr content--layout content--layout-3 place-items-center gap-4">
