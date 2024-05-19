@@ -1,7 +1,14 @@
 // import React from 'react'
 import "./Cursor.scss";
+import { useEffect } from "react";
+import { initiateCursorAnimation } from "../../utils/util.ts";
 
 export default function Cursor() {
+  useEffect(() => {
+    console.log("useEffect of App.tsx")
+    initiateCursorAnimation();
+  }, []);
+
   return (
     <>
       <div className="cursor">

@@ -32,7 +32,7 @@ function Header() {
           <div className="flex items-center">
             <nav className="font-sen hidden items-center text-xl uppercase  lg:flex">
               <a
-                href="#"
+                href="/"
                 className="flex px-6 py-4 font-JosefinSlab font-black uppercase"
               >
                 Home
@@ -48,7 +48,7 @@ function Header() {
                 shreyans jain{" "}
               </p>
               <a
-                href="#"
+                href="/projects"
                 className="flex px-6 py-4 font-JosefinSlab font-black uppercase"
               >
                 Project
